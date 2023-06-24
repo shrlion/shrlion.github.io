@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>C语言环境配置</title>
+    <url>/2023/06/21/C%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<p><strong>要求：vscode ,MinGW&#x2F;gcc&#x2F;tcc</strong><br> <strong>第一步</strong><br>安装编辑器 <strong><a class="link"   href="https://code.visualstudio.com/" >vscode <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a></strong> (可以从这里跳转官网)，vscode是微软家的一款轻量级文本编辑器，但他提供众多的插件，通过安装不同的插件来增加功能。<br>![[Pasted image 20230621223735.png]]<br>选择适合的操作系统进行下载安装。<br><strong>第二步</strong><br>安装好后，打开vscode它的基础语言是英语，如果想要改成中文，打开扩展(extensions).<br>![[Pasted image 20230621224843.png]]</p>
+]]></content>
+      <tags>
+        <tag>C</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/06/11/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
