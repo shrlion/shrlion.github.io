@@ -69,6 +69,9 @@
 <div class="highlight-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="code"><pre><span class="line">gcc.exe (Rev1, Built by MSYS2 project) 12.2.0</span><br></pre></td></tr></table></figure></div>
 <p>表示安装成功。<br>接下来，你就可以愉快的的进行编程了。</p>
 ]]></content>
+      <categories>
+        <category>C</category>
+      </categories>
       <tags>
         <tag>C</tag>
       </tags>
