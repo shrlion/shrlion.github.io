@@ -74,6 +74,7 @@
 <li><p>touch 创建新文件，或改变已有文件的时间戳<br> touch [-a,-d,-m,-r,-t] file<br> -a 改变指定文件的最后访问时间</p>
 </li>
 </ol>
+<p>待续….</p>
 ]]></content>
       <categories>
         <category>Linux</category>
