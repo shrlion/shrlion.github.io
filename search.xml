@@ -59,6 +59,30 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux</title>
+    <url>/2023/07/26/Linux/</url>
+    <content><![CDATA[<p><strong>基础命令</strong>  </p>
+<ol>
+<li><p>pwd(print working diectory) 显示当前路径<br> pwd [-L,-P]<br> -L logical缩写，显示逻辑路径，pwd系统环境变量值<br> -P physical缩写，显示物理路径若当前目录路径是软链接文件，则显示源文件   </p>
+</li>
+<li><p>cd(change directory) 切换工作目录<br> cd [-L,-P,-,~,..] dir<br> -P 若目标文件是软链接，直接切换到软链接的真正物理目标文件<br> -L 若文件目标是软连接，会直接切换到软连接目录<br> -. 切换到用户上次所在目录<br> ~  切换到系统的home目录下<br> .. 当前文件的上一级目录</p>
+</li>
+<li><p>tree 以树形结构显示指定目录的所有内容<br> tree [-a,-d,-f,i,-L,-F] dir<br> -a 显示所有文件包括隐藏文件<br> -d 只显示目录<br> -f 显示每个文件的全路<br> -i 不显示树枝<br> -L 遍历目录的最大层数<br> -F </p>
+</li>
+<li><p>mkdir(make diectory) 创建文件目录，如若已存在会进行提示<br> mkdir [-p,-m,-v] dir<br> -p 递归创建目录，创建一个目录后在其下在创建目录<br> -m 设置新目录的默认目录对应权限<br> -v 显示创建目录过程</p>
+</li>
+<li><p>touch 创建新文件，或改变已有文件的时间戳<br> touch [-a,-d,-m,-r,-t] file<br> -a 改变指定文件的最后访问时间</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python 虚拟环境(ven)</title>
     <url>/2023/07/05/Python-%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83-ven/</url>
     <content><![CDATA[<p><strong>要求：python</strong><br>第一种</p>
