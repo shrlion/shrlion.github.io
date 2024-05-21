@@ -9,7 +9,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>
         
-            归档
+            C语言环境配置
         
     </title>
     <link rel="shortcut icon" href="#"/>
@@ -32,15 +32,40 @@
 <meta name="generator" content="Hexo 7.2.0"></head>
 <body>
     <a id="cover"></a>
-    <link type="text/css" rel="stylesheet" href="/css/archive.css">
+    <link type="text/css" rel="stylesheet" href="/css/post.css">
 <div id="header" class="header">
     <div class="vertical">
         <div class="inner">
             
-                <h1 class="header-subtitle">归档</h1>
+                <h1 class="header-subtitle">C语言环境配置</h1>
                 <div class="header-subinfo">
-                    <p class="article-info-text Chinese"></p>
-                    <p class="article-info-text English"></p>                  
+                    <p class="article-info-text">
+                        <span>
+                            <i class="iconfont icon-time"></i> 发表时间：2023-07-01
+                        </span>
+                        
+                            
+                                <span id="/posts/2680035849/" class="leancloud_visitors" data-flag-title="C语言环境配置">
+                                    <i class="iconfont icon-browse"></i> 阅读：<sapn class="leancloud-visitors-count"></span>
+                                </span>
+                            
+                            
+                                <span>
+                                    <i class="iconfont icon-interactive"></i> 评论：<span class="valine-comment-count" data-xid="/posts/2680035849/"></span>
+                                </span>
+                              
+                        
+                    </p>
+                    
+                        
+                            <span class="category-color">编程语言</span>
+                        
+                    
+                    
+                        
+                            <span class="tag-color">C</span>
+                        
+                    
                 </div>
             
         </div>
@@ -49,37 +74,91 @@
 </div>
 <div id="container">
     
-        
-            <!-- 归档页面、分类归档页面、标签归档页面 -->
-            <div class="articles">
-                <div class="articles-wrap">
-                    <span class="archive-move-on"></span>
-                    <span class="archive-counter">
+        <!-- 文章页面 -->
+        <div id="article">
+            <div class="toc"></div>
+            <div class="article-body">
+                <p><strong>要求：vscode ,gcc（Windows）</strong><br> <strong>第一步</strong><br>安装编辑器 <strong><a target="_blank" rel="noopener" href="https://code.visualstudio.com/">vscode</a></strong> (可以从这里跳转官网)，vscode是微软家的一款轻量级文本编辑器，但他提供众多的插件，通过安装不同的插件来增加功能。    </p>
+
+<p>选择适 合的操作系统进行下载，下载后进行安装。<br><strong>第二步</strong><br>安装好后，打开vscode它的基础语言是英语，如果想要改成中文，打开扩展(extensions)，左边栏中带有方块的,输入chinese，选择第一个点击安装.</p>
+
+
+<p><strong>第三步</strong><br>安装两个插件分别是C&#x2F;C++和code runer，如下图都是选择第一个。</p>
+
+
+
+
+<p><strong>第四步</strong><br>安装好编辑器，进行编译环境的安装，首先要安装MSYS2（安装需要Windows8.1及以上版本），<strong>MSYS2</strong>是工具和库的集合，为您提供了一个易于使用的环境来构建、安装和运行本机 Windows 软件。<br><a target="_blank" rel="noopener" href="https://mintty.github.io/">它由名为mintty</a>的命令行终端 、bash、版本控制系统（如 git 和 subversion）、工具（如 tar 和 awk）甚至构建系统（如 autotools）组成，所有这些都基于<a target="_blank" rel="noopener" href="https://cygwin.com/">Cygwin</a>的修改版本。尽管其中一些核心部分基于 Cygwin，但 MSYS2 的主要重点是为本机 Windows 软件提供构建环境，并且使用 Cygwin 的部分保持在最低限度。MSYS2 为 GCC、mingw-w64、CPython、CMake、Meson、OpenSSL、FFmpeg、Rust、Ruby 等提供最新的本机构建。<br>打开<a target="_blank" rel="noopener" href="https://www.msys2.org,下滑找到安装程序,点击下载进行安装./">https://www.msys2.org，下滑找到安装程序，点击下载进行安装。</a></p>
+
+
+<p><strong>注意：</strong> 安装的位置为NTFS 卷上的短 ASCII 路径、无重音符号、无空格、无符号链接、无子目录或网络驱动器、无 FAT。<br>完成后，需要再安装一个工具，在终端运行以下命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pacman -S mingw-w64-ucrt-x86_64-gcc</span><br></pre></td></tr></table></figure>
+<p>终端会显示以下结果：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">resolving dependencies...</span><br><span class="line">looking for conflicting packages...</span><br><span class="line"></span><br><span class="line">Packages (15) mingw-w64-ucrt-x86_64-binutils-2.39-2</span><br><span class="line">            mingw-w64-ucrt-x86_64-crt-git-10.0.0.r68.g6eb571448-1</span><br><span class="line">            mingw-w64-ucrt-x86_64-gcc-libs-12.2.0-1  mingw-w64-ucrt-x86_64-gmp-6.2.1-3</span><br><span class="line">            mingw-w64-ucrt-x86_64-headers-git-10.0.0.r68.g6eb571448-1</span><br><span class="line">            mingw-w64-ucrt-x86_64-isl-0.25-1  mingw-w64-ucrt-x86_64-libiconv-1.17-1</span><br><span class="line">            mingw-w64-ucrt-x86_64-libwinpthread-git-10.0.0.r68.g6eb571448-1</span><br><span class="line">            mingw-w64-ucrt-x86_64-mpc-1.2.1-1  mingw-w64-ucrt-x86_64-mpfr-4.1.0.p13-1</span><br><span class="line">            mingw-w64-ucrt-x86_64-windows-default-manifest-6.4-4</span><br><span class="line">            mingw-w64-ucrt-x86_64-winpthreads-git-10.0.0.r68.g6eb571448-1</span><br><span class="line">            mingw-w64-ucrt-x86_64-zlib-1.2.12-1  mingw-w64-ucrt-x86_64-zstd-1.5.2-2</span><br><span class="line">            mingw-w64-ucrt-x86_64-gcc-12.2.0-1</span><br><span class="line"></span><br><span class="line">Total Installed Size:  397.59 MiB</span><br><span class="line"></span><br><span class="line">:: Proceed with installation? [Y/n]</span><br><span class="line">[... downloading and installation continues ...]</span><br></pre></td></tr></table></figure>
+<p>按“enter”继续，完成后。<br>输入：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -v</span><br></pre></td></tr></table></figure>
+<p>出现：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc.exe (Rev1, Built by MSYS2 project) 12.2.0</span><br></pre></td></tr></table></figure>
+<p>表示安装成功。<br>接下来，你就可以愉快的的进行编程了。</p>
+
+                
+                <p class="end">__END__</p>
+            </div>
+            <div class="article-footer">
+                <div class="suffix-box">
+    <div class="suffix-box-left">
+        <img src="/image/sidebar/favicon.ico" alt="Fomalhaut">
+    </div>
+    <div class="suffix-box-right">
+        <span class="suffix-box-title">文章作者：</span>Fomalhaut
+        <br>
+        <span class="suffix-box-title">文章出处：</span><a href="/posts/2680035849/" target="_blank">C语言环境配置</a>
+        <br>
+        <span class="suffix-box-title">作者签名：</span>简单地活着, 肆意又精彩.
+        <br>
+        <span class="suffix-box-title">关于主题：</span><a href="https://github.com/first19326/Hexo-LiveForCode" target="_blank">Hexo - Live For Code</a>
+        <br>
+        <span class="suffix-box-title">版权声明：</span>文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" title="BY-NC-SA" target="_blank">BY-NC-SA</a> 许可协议，转载请注明出处
+        <br>
+    </div>
+    <div style="clear: both;"></div>
+</div>
+                
+                    <div class="category">
+                        分类：
                         
-                            目前共计 3 篇日志，继续加油！
+                            <a href="/category/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">编程语言</a>
                         
-                    </span>
+                    </div>
+                
+                
+                    <div class="tag">
+                        标签：
+                        
+                            <a href="/tag/C/">C</a>
+                        
+                    </div>
+                
+                <div class="article-prev-next">
                     
+                        <a href="/posts/3941431580/" class="prev-prefix">« </a> 上一篇：    <a href="/posts/3941431580/" title="发布于 2023-07-05 10:12">Python 虚拟环境(ven)</a>
+                        <br>
                     
-                        
-                            <div class="archive-title">
-                                <h2 class="archive-year">2024</h2>
-                            </div>
-                            
-                           
-                        <div class="article">
-                            <div class="article-header">
-                                <h1 class="article-title"><a href="/posts/1243066711/"><span>Hello World</span></a></h1>
-                                <div class="article-meta">
-                                    <span class="article-time">05-21</span>
-                                </div>
-                            </div>
-                        </div>
                     
                 </div>
             </div>
             
+    <div class="article-comments">
         
+            <div class="comments-title">
+                评论列表
+            </div>
+        
+        <div class="comments-content"></div>
+    </div>
+    
+ 
+        </div>
     
 </div>
     <div id="footer">
@@ -117,7 +196,7 @@
                     
                         <li class=""><a href="/tag" class="" target="_self"><span class="iconfont icon-discount-fill"></span>标签</a></li>
                     
-                        <li class=" active "><a href="/archive" class="" target="_self"><span class="iconfont icon-calendar-fill"></span>归档</a></li>
+                        <li class=""><a href="/archive" class="" target="_self"><span class="iconfont icon-calendar-fill"></span>归档</a></li>
                     
                         <li class=""><a href="/donate" class="" target="_self"><span class="iconfont icon-heart-fill"></span>赞赏</a></li>
                     
